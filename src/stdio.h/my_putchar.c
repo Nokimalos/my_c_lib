@@ -9,14 +9,14 @@
 
 /*____LIB____*/
 
-int my_putchar(char c)
+int kputchar(char c)
 {
     return (putc(c, stdout));
 }
 
 /*____LIB____*/
 
-void my_putchar(char c)
+void kputchar(char c)
 {
     write(1, &c, 1);
 }
