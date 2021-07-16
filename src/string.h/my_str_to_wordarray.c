@@ -45,4 +45,22 @@ int count_str(char *str, char delim, int beg)
 char **my_str_to_word_array(char *str, char delim)
 {
     int size = 0;
+    int cw = count_word(str, delim);
+    char **tab = mallic(sizeof(char *) * (cw * 2));
+
+    if (tab == NULL)
+        return NULL;
+    for (int i, k = 0; i < cw + 1; ++i, ++k) {
+        size = count_str(str, k, delim);
+        tab[i] = malloc(size + 1);
+        if (tab[i] == NULL)
+            return NULL;
+        for (int j = 0; j < size && str[k] 
+        != delim && str[k] != '\0'; ++j, ++k) {
+            tab[i][j] = str[k];
+            tab[i][j + 1] = '\0';
+        }
+        tab[i + 1] = NULL;
+    }
+    return tab;
 }
