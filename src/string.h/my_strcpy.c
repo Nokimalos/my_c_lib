@@ -4,6 +4,18 @@
 ** my_strcpy
 */
 
+/*____LIB____*/
+
+char *my_strcpy(register char *dest, register const char *src)
+{
+    char *tmp = dest;
+
+    for (; *dest = *src; ++dest, ++src);
+    return tmp;
+}
+
+/*____LIB____*/
+
 char *my_strcpy(char *dest, char const *src)
 {
     int i = 0;
