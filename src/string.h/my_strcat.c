@@ -6,7 +6,7 @@
 
 #include <stddef.h>
 
-/*____LIB____*/
+/*____LIBC____*/
 
 char *my_strcat(register char *dest, register const char *src)
 {

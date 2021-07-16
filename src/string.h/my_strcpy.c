@@ -4,7 +4,7 @@
 ** my_strcpy
 */
 
-/*____LIB____*/
+/*____LIBC____*/
 
 char *my_strcpy(register char *dest, register const char *src)
 {

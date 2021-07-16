@@ -4,7 +4,7 @@
 ** my_strcmp
 */
 
-/*____LIB____*/
+/*____LIBC____*/
 
 int my_strcmp(register const char *s1, register const char *s2)
 {
