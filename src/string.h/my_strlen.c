@@ -4,8 +4,10 @@
 ** my_strlen
 */
 
-#include <string.h>
+#include <stddef.h>
 #include <stdio.h>
+
+/*____LIB____*/
 
 size_t my_strlen(const char *str)
 {
@@ -14,6 +16,18 @@ size_t my_strlen(const char *str)
     for (tmp = str; *tmp; ++tmp);
     return tmp - str;
 }
+
+/*____LIB____*/
+
+size_t my_strlen(const char *str)
+{
+    size_t i = 0;
+
+    for (; str[i] != '\0'; ++i);
+    return i;
+}
+
+/*____MAIN____*/
 
 int main(__attribute__((unused))int ac, char const * const av[])
 {

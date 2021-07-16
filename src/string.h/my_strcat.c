@@ -6,6 +6,19 @@
 
 #include <stddef.h>
 
+/*____LIB____*/
+
+char *my_strcat(register char *dest, register const char *src)
+{
+    char *tmp = dest;
+
+    for (; *dest; ++dest);
+    while(*dest++ = *src++);
+    return tmp;
+}
+
+/*____LIB____*/
+
 char *my_strcat(char *dest, char const *src)
 {
     int i = 0;
