@@ -9,7 +9,7 @@
 
 /*____LIBC____*/
 
-size_t my_strlen(const char *str)
+size_t kstrlen(const char *str)
 {
     register const char *tmp = NULL;
 

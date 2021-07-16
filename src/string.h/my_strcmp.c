@@ -6,7 +6,7 @@
 
 /*____LIBC____*/
 
-int my_strcmp(register const char *s1, register const char *s2)
+int kstrcmp(register const char *s1, register const char *s2)
 {
     for (; *s1 == *s2; ++s1, ++s2)
         if (*s1 == '\0')

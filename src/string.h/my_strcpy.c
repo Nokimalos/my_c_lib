@@ -6,7 +6,7 @@
 
 /*____LIBC____*/
 
-char *my_strcpy(register char *dest, register const char *src)
+char *kstrcpy(register char *dest, register const char *src)
 {
     char *tmp = dest;
 

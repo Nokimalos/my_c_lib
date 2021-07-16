@@ -12,7 +12,9 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-int my_strlen(char *str)
+/*____LIB____*/
+
+int kstrlen(char *str)
 {
     int i = 0;
 

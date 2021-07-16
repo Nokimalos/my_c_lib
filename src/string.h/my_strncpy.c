@@ -8,7 +8,7 @@
 
 /*____LIBC____*/
 
-char *my_strncpy(char *dest, const char *src, register size_t n)
+char *kstrncpy(char *dest, const char *src, register size_t n)
 {
     if (n != 0) {
         register char *tmp_dest = dest;

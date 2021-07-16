@@ -9,7 +9,7 @@
 
 /*____LIBC____*/
 
-size_t my_strlen(const char *str)
+size_t kstrlen(const char *str)
 {
     register const char *tmp = NULL;
 
@@ -17,7 +17,7 @@ size_t my_strlen(const char *str)
     return tmp - str;
 }
 
-char *my_strcpy(register char *dest, register const char *src)
+char *kstrcpy(register char *dest, register const char *src)
 {
     char *tmp = dest;
 
@@ -25,7 +25,7 @@ char *my_strcpy(register char *dest, register const char *src)
     return tmp;
 }
 
-char *my_strncpy(char *dest, const char *src, register size_t n)
+char *kstrncpy(char *dest, const char *src, register size_t n)
 {
     if (n != 0) {
         register char *tmp_dest = dest;
@@ -42,7 +42,7 @@ char *my_strncpy(char *dest, const char *src, register size_t n)
     return (dest);
 }
 
-char *my_strncat(char *dest, const char *src, size_t nb)
+char *kstrncat(char *dest, const char *src, size_t nb)
 {
     size_t dest_len = my_strlen(dest);
     size_t src_len = my_strlen(src);

@@ -11,7 +11,9 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-int my_strlen(char *str)
+/*____LIB____*/
+
+int kstrlen(char *str)
 {
     int i = 0;
 
@@ -19,7 +21,7 @@ int my_strlen(char *str)
     return i;
 }
 
-char *my_strdup(char *src)
+char *kstrdup(char *src)
 {
     int i = 0;
     char *p = malloc(sizeof(char) * (i + 1));
@@ -31,7 +33,7 @@ char *my_strdup(char *src)
     return p;
 }
 
-char *my_strcat(char *dest, char const *src)
+char *kstrcat_malloc(char *dest, char const *src)
 {
     int i = 0;
     int j = 0;

@@ -8,7 +8,7 @@
 
 /*____LIBC____*/
 
-char *my_strcat(register char *dest, register const char *src)
+char *kstrcat(register char *dest, register const char *src)
 {
     char *tmp = dest;
 
