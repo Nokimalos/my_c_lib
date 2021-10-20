@@ -16,7 +16,6 @@ Coverage :
 How to test to compile the Lib and see the tests :
          
          - 1. make re (If you don't have make : sudo dnf install make automake gcc gcc-c++ kernel-devel)
-
          - 2. firefox covr.html
 
 Enjoy :)
