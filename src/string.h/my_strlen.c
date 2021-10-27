@@ -17,6 +17,13 @@ size_t kstrlen(const char *str)
     return tmp - str;
 }
 
+/*____NEWLIB____*/
+
+size_t my_kstrlen(const char *str)
+{
+    return (!*str) ? 0 : my_kstrlen(str + 1) + 1;
+}
+
 /*____LIB____*/
 
 size_t my_strlen(const char *str)
