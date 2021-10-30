@@ -7,6 +7,11 @@
 #ifndef _LIB_H_
 #define _LIB_H_
 
+#include <stddef.h>
+
+size_t my_strlen(const char *str);
+size_t kstrlen(const char *str);
+size_t my_kstrlen(const char *str);
 void my_put_nbr(int nb);
 int my_str_isalpha(char const *str);
 int my_str_islower(char const *str);
