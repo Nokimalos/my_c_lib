@@ -22,5 +22,6 @@ int my_strcmp(char const *s1, char const *s2);
 char *my_strupcase(char *str);
 int my_squareroot(int nb);
 int my_factrec(int nb);
+char *my_strcat(register char *dest, register const char *src);
 
 #endif /*__LIB_H__*/

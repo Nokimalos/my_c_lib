@@ -19,7 +19,8 @@ SRC		=	src/my_put_nbr.c	\
 			src/my_strupcase.c	\
 			src/my_squareroot.c	\
 			src/my_strlen.c 	\
-			src/my_factrec.c
+			src/my_factrec.c	\
+			src/my_strcat.c
 
 SRC_TEST	=	tests/test_my_put_nbr.c			\
 			tests/test_my_str_isalpha.c		\
@@ -32,6 +33,7 @@ SRC_TEST	=	tests/test_my_put_nbr.c			\
 			tests/test_my_squareroot.c		\
 			tests/test_my_strlen.c			\
 			tests/test_my_factrec.c			\
+			tests/test_my_strcat.c
 
 OBJ		=	$(SRC:.c=.o)
 
