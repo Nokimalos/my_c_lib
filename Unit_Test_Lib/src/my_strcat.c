@@ -9,6 +9,6 @@ char *my_strcat(register char *dest, register const char *src)
     char *tmp = dest;
 
     for (; *dest; ++dest);
-    while (*dest++ = *src++);
+    for (; *dest = *src; *dest++, *src++);
     return tmp;
 }
