@@ -22,13 +22,13 @@ SRC		=	src/my_put_nbr.c		\
 			src/ctype/my_ispunct.c		\
 			src/ctype/my_isgraph.c		\
 			src/ctype/my_iscntrl.c		\
-			src/my_strcmp.c 		\
-			src/my_strlowcase.c 		\
-			src/my_strupcase.c		\
+			src/string/my_strcmp.c 		\
+			src/string/my_strlowcase.c 		\
+			src/string/my_strupcase.c		\
 			src/my_squareroot.c		\
-			src/my_strlen.c 		\
+			src/string/my_strlen.c 		\
 			src/my_factrec.c		\
-			src/my_strcat.c
+			src/string/my_strcat.c
 
 SRC_TEST	=	tests/test_my_put_nbr.c			\
 			tests/test_my_strcmp.c 			\
@@ -55,7 +55,7 @@ tests_run: $(OBJ)
 	-./$(TESTNAME) && $(HTMLFLAGS)
 
 clean:
-	$(RM) *.o $(RM) src/*.o $(RM) src/ctype/*.o $(RM) *~ $(RM) *.html $(RM) *.gcda $(RM) *.gcno $(RM) $(TESTNAME)
+	$(RM) *.o $(RM) src/*.o $(RM) src/ctype/*.o $(RM) src/string/*.o $(RM) *~ $(RM) *.html $(RM) *.gcda $(RM) *.gcno $(RM) $(TESTNAME)
 
 fclean: clean
 	$(RM) $(TEST_NAME)
