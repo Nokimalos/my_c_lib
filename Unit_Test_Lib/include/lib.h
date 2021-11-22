@@ -23,5 +23,7 @@ char *my_strupcase(char *str);
 int my_squareroot(int nb);
 int my_factrec(int nb);
 char *my_strcat(register char *dest, register const char *src);
+int my_isalnum(const char *str);
+int my_isspace(const char *str);
 
 #endif /*__LIB_H__*/
