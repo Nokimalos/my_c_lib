@@ -28,6 +28,20 @@ Test(my_isalnum, just_alpha)
     cr_assert_eq(my_isalnum(str), 1);
 }
 
+Test(my_isalnum, is_lower)
+{
+    const char str[] = "helloworld";
+
+    cr_assert_eq(my_isalnum(str), 1);
+}
+
+Test(my_isalnum, is_upper)
+{
+    const char str[] = "HELLOWORLD";
+
+    cr_assert_eq(my_isalnum(str), 1);
+}
+
 Test(my_isalnum, alpha_numeric_with_space)
 {
     const char str[] = "Hello-World ";

@@ -25,5 +25,7 @@ int my_factrec(int nb);
 char *my_strcat(register char *dest, register const char *src);
 int my_isalnum(const char *str);
 int my_isspace(const char *str);
+int my_isdigit(int i);
+int my_isprint(const char *str);
 
 #endif /*__LIB_H__*/

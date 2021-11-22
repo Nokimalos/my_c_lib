@@ -16,6 +16,7 @@ SRC		=	src/my_put_nbr.c		\
 			src/ctype/my_isupper.c		\
 			src/ctype/my_isalnum.c		\
 			src/ctype/my_isspace.c		\
+			src/ctype/my_isprint.c		\
 			src/my_strcmp.c 		\
 			src/my_strlowcase.c 		\
 			src/my_strupcase.c		\
@@ -37,6 +38,7 @@ SRC_TEST	=	tests/test_my_put_nbr.c			\
 			tests/test_my_factrec.c			\
 			tests/test_my_isalnum.c			\
 			tests/test_my_isspace.c			\
+			tests/test_my_isprint.c			\
 			tests/test_my_strcat.c
 
 OBJ		=	$(SRC:.c=.o)

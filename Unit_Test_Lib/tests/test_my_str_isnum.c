@@ -27,3 +27,17 @@ Test(my_str_isnum, number)
 
     cr_assert_eq(my_str_isnum(str), 1);
 }
+
+Test(my_isdigit, good_one)
+{
+    int i = '9';
+
+    cr_assert_eq(my_isdigit(i), 1);
+}
+
+Test(my_isdigit, not_good)
+{
+    int i = -9;
+
+    cr_assert_eq(my_isdigit(i), 0);
+}
