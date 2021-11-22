@@ -17,6 +17,11 @@ SRC		=	src/my_put_nbr.c		\
 			src/ctype/my_isalnum.c		\
 			src/ctype/my_isspace.c		\
 			src/ctype/my_isprint.c		\
+			src/ctype/my_isxdigit.c		\
+			src/ctype/my_isblank.c		\
+			src/ctype/my_ispunct.c		\
+			src/ctype/my_isgraph.c		\
+			src/ctype/my_iscntrl.c		\
 			src/my_strcmp.c 		\
 			src/my_strlowcase.c 		\
 			src/my_strupcase.c		\
@@ -26,19 +31,13 @@ SRC		=	src/my_put_nbr.c		\
 			src/my_strcat.c
 
 SRC_TEST	=	tests/test_my_put_nbr.c			\
-			tests/test_my_str_isalpha.c		\
-			tests/test_my_str_isnum.c 		\
-			tests/test_my_str_isupper.c 		\
 			tests/test_my_strcmp.c 			\
 			tests/test_my_strlowcase.c 		\
 			tests/test_my_strupcase.c 		\
-			tests/test_my_str_islower.c		\
 			tests/test_my_squareroot.c		\
 			tests/test_my_strlen.c			\
 			tests/test_my_factrec.c			\
-			tests/test_my_isalnum.c			\
-			tests/test_my_isspace.c			\
-			tests/test_my_isprint.c			\
+			tests/test_ctype_functions.c	\
 			tests/test_my_strcat.c
 
 OBJ		=	$(SRC:.c=.o)
@@ -56,7 +55,7 @@ tests_run: $(OBJ)
 	-./$(TESTNAME) && $(HTMLFLAGS)
 
 clean:
-	$(RM) *.o $(RM) src/*.o $(RM) src/ctype/*.o $(RM) *~ $(RM) *.html $(RM) *.gcda $(RM) *.gcno
+	$(RM) *.o $(RM) src/*.o $(RM) src/ctype/*.o $(RM) *~ $(RM) *.html $(RM) *.gcda $(RM) *.gcno $(RM) $(TESTNAME)
 
 fclean: clean
 	$(RM) $(TEST_NAME)

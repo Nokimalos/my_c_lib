@@ -1,20 +1,23 @@
 /*
-** ctype.h
+** Unit_Test_Lib
 ** File description:
 ** my_ispunct
 */
-
-#include <stdbool.h>
 
 #define IS_PUNCT ((str[i] > ' ' && str[i] < '0') \
         || (str[i] > '9' && str[i] < 'A') \
         || (str[i] > 'Z' && str[i] < 'a') \
         || (str[i] > 'z'))
 
-bool my_ispunct(char const *str)
+int my_ispunct(const char *str)
 {
-    for (int i = 0; str[i] != '\0'; ++i)
+    int i = 0;
+
+    while (str[i] != '\0') {
         if (IS_PUNCT)
-            return true;
-    return false;
+            ++i;
+        else
+            return 0;
+    }
+    return 1;
 }
