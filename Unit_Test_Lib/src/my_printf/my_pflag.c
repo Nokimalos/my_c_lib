@@ -6,10 +6,7 @@
 */
 
 #include <unistd.h>
-
-void my_putchar(char c);
-int my_putstr(char *str);
-void my_xflag(int n);
+#include "bsprintf.h"
 
 void *my_put_p(int n)
 {

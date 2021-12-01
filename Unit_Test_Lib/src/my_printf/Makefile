@@ -5,15 +5,9 @@
 ## Makefile
 ##
 
-SRC		=	my_put_nbr.c		\
-			my_putstr.c		\
-			my_putchar.c		\
-			my_cflag.c		\
-			my_dflag.c		\
+SRC		=	utils.c			\
 			my_xflag.c		\
 			my_higher_xflag.c	\
-			my_iflag.c		\
-			my_sflag.c		\
 			my_oflag.c		\
 			my_bflag.c		\
 			my_uflag.c		\

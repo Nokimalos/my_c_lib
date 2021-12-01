@@ -6,8 +6,7 @@
 */
 
 #include <unistd.h>
-
-void my_putchar(char c);
+#include "bsprintf.h"
 
 int my_put_unsigned_nbr(unsigned int nb)
 {

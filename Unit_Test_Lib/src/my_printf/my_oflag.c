@@ -7,8 +7,7 @@
 
 #include <unistd.h>
 #include <stdio.h>
-
-void my_putchar(char c);
+#include "bsprintf.h"
 
 void my_put_octal(int nb)
 {
