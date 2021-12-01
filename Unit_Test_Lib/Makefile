@@ -29,21 +29,17 @@ SRC		=	src/my_put_nbr.c		\
 			src/string/my_memchr.c		\
 			src/string/my_memcpy.c		\
 			src/string/my_memccpy.c 	\
+			src/string/my_strcpy.c		\
 			src/my_squareroot.c		\
 			src/string/my_strlen.c 		\
 			src/my_factrec.c		\
 			src/string/my_strcat.c
 
 SRC_TEST	=	tests/test_my_put_nbr.c			\
-			tests/test_my_strcmp.c 			\
-			tests/test_my_strlowcase.c 		\
-			tests/test_my_strupcase.c 		\
 			tests/test_my_squareroot.c		\
-			tests/test_my_strlen.c			\
 			tests/test_my_factrec.c			\
 			tests/test_ctype_functions.c	\
-			tests/test_my_memset.c			\
-			tests/test_my_strcat.c
+			tests/test_string_functions.c
 
 OBJ		=	$(SRC:.c=.o)
 

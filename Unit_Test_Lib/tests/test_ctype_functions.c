@@ -6,7 +6,7 @@
 
 #include <stddef.h>
 #include <criterion/criterion.h>
-#include "lib.h"
+#include "libctype.h"
 
 Test(my_isalnum, alpa_numeric)
 {
