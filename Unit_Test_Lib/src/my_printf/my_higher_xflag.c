@@ -7,7 +7,7 @@
 
 #include <unistd.h>
 #include <stdio.h>
-#include "bsprintf.h"
+#include "libstdio.h"
 
 void my_put_hex_maj(int nb)
 {

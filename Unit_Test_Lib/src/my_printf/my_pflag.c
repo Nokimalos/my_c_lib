@@ -6,7 +6,7 @@
 */
 
 #include <unistd.h>
-#include "bsprintf.h"
+#include "libstdio.h"
 
 void *my_put_p(int n)
 {

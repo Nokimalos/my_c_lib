@@ -33,12 +33,21 @@ SRC		=	src/my_put_nbr.c		\
 			src/my_squareroot.c		\
 			src/string/my_strlen.c 		\
 			src/my_factrec.c		\
+			src/my_printf/my_bflag.c	\
+			src/my_printf/my_xflag.c	\
+			src/my_printf/my_higher_xflag.c	\
+			src/my_printf/my_oflag.c	\
+			src/my_printf/my_pflag.c	\
+			src/my_printf/my_printf.c	\
+			src/my_printf/my_uflag.c		\
+			src/my_printf/utils.c		\
 			src/string/my_strcat.c
 
 SRC_TEST	=	tests/test_my_put_nbr.c			\
 			tests/test_my_squareroot.c		\
 			tests/test_my_factrec.c			\
 			tests/test_ctype_functions.c	\
+			tests/test_my_printf.c			\
 			tests/test_string_functions.c
 
 OBJ		=	$(SRC:.c=.o)
@@ -56,7 +65,7 @@ tests_run: $(OBJ)
 	-./$(TESTNAME) && $(HTMLFLAGS)
 
 clean:
-	$(RM) *.o $(RM) src/*.o $(RM) src/ctype/*.o $(RM) src/string/*.o $(RM) *~ $(RM) *.html $(RM) *.gcda $(RM) *.gcno $(RM) $(TESTNAME)
+	$(RM) *.o $(RM) src/*.o $(RM) src/ctype/*.o $(RM) src/string/*.o $(RM) src/my_printf/*.o $(RM) *~ $(RM) *.html $(RM) *.gcda $(RM) *.gcno $(RM) $(TESTNAME)
 
 fclean: clean
 	$(RM) $(TEST_NAME)

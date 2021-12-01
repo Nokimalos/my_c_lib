@@ -1,14 +1,13 @@
 /*
-** EPITECH PROJECT, 2020
-** my_printftest.c
+** EPITECH PROJECT, 2021
+** Unit_Test_Lib
 ** File description:
-** my_printftest
+** test_my_printf
 */
-
 
 #include <criterion/criterion.h>
 #include <criterion/redirect.h>
-#include "../bsprintf.h"
+#include "libstdio.h"
 
 void  redirect_all_std(void)
 {

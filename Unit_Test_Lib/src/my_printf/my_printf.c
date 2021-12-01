@@ -8,7 +8,8 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include <stdio.h>
-#include "bsprintf.h"
+#include "libstdio.h"
+#include "lib.h"
 
 void call_my_flags(char *n, int i, va_list list)
 {

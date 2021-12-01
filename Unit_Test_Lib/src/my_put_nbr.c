@@ -5,11 +5,7 @@
 */
 
 #include <unistd.h>
-
-void my_putchar(char c)
-{
-    write(1, &c, 1);
-}
+#include "libstdio.h"
 
 void my_put_nbr(int nb)
 {
