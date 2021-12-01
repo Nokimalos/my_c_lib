@@ -6,7 +6,7 @@
 
 #include <stddef.h>
 
-void *my_memcpy(void *dest, const void *src, size_t len)
+void *my_memcpy(void * restrict dest, const void * restrict src, size_t len)
 {
     char *d_tmp = dest;
 
