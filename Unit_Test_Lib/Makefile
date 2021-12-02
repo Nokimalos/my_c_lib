@@ -30,6 +30,8 @@ SRC		=	src/my_put_nbr.c		\
 			src/string/my_memcpy.c		\
 			src/string/my_memccpy.c 	\
 			src/string/my_strcpy.c		\
+			src/string/my_memcmp.c		\
+			src/string/my_memmove.c		\
 			src/my_squareroot.c		\
 			src/string/my_strlen.c 		\
 			src/my_factrec.c		\

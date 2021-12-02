@@ -136,9 +136,28 @@ Test(my_memchr, reconize_data)
 
 Test(my_memcpy, copy_data)
 {
-    int array [] = {54, 85, 20, 63, 21};
+    int array[] = {54, 85, 20, 63, 21};
     int length = sizeof( int ) * 5;
     int *copy = (int *) malloc(length);
 
     cr_assert(my_memcpy(copy, array, length) == memcpy(copy, array, length));
+}
+
+Test(my_memcmp, compare_data)
+{
+    int array1[] = {54, 85, 20, 63, 21};
+    int array2[] = {54, 85, 19, 63, 21};
+    size_t size = sizeof(int) * 5;
+
+    cr_assert(my_memcmp(array1, array2, size) == memcmp(array1, array2, size));
+}
+
+Test(my_memmove, move_data)
+{
+    int data[] = {20, 30, 40, 50, 60, 70, 80, 90, 100, 0};
+    void *src = (void *) data;
+    void *dest = (void *) (data + 1);
+    size_t size = 10 * sizeof(int);
+
+    cr_assert(memmove(dest, src, size) == my_memmove(dest, src, size));
 }
