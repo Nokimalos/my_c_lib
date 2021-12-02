@@ -161,3 +161,12 @@ Test(my_memmove, move_data)
 
     cr_assert(memmove(dest, src, size) == my_memmove(dest, src, size));
 }
+
+Test(my_strchr, move_str)
+{
+    const char *src = "The C Language";
+    int len = strlen(src);
+    char *dest = (char *)malloc(sizeof(char) * (len + 1));
+
+    cr_assert(my_strchr(dest, 'a') == strchr(dest, 'a'));
+}

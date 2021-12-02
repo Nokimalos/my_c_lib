@@ -14,6 +14,7 @@ char *my_strlowcase(char *str);
 char *my_strupcase(char *str);
 char *my_strcat(register char *dest, register const char *src);
 char *my_strcpy(char *dest, const char *src);
+char *my_strchr(const char *str, int search);
 size_t my_strlen(const char *str);
 size_t kstrlen(const char *str);
 size_t my_kstrlen(const char *str);
