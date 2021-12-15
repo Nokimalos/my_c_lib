@@ -10,6 +10,7 @@
 
 void my_putchar(char c);
 int my_putstr(char *str);
+void my_put_nbr(int nb);
 void my_higher_xflag(int n);
 void my_xflag(int n);
 void my_oflag(int n);

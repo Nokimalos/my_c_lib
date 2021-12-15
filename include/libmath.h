@@ -9,7 +9,6 @@
 
 #include <stddef.h>
 
-void my_put_nbr(int nb);
 int my_squareroot(int nb);
 int my_factrec(int nb);
 
