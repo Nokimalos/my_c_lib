@@ -35,7 +35,7 @@ void call_my_flags(char *n, int i, va_list list)
             my_pflag(va_arg(list, int));
 }
 
-void call_my_flags2(char *n, int i, va_list list)
+void call_my_flags2(char *n, int i)
 {
     if (n[i + 1] == '%')
         my_putchar('%');
@@ -49,7 +49,7 @@ void my_printf(char *n, ...)
     for (int i = 0; n[i] != '\0'; i++) {
         if (n[i] == '%') {
             call_my_flags(n, i, list);
-            call_my_flags2(n, i, list);
+            call_my_flags2(n, i);
             i += 1;
         }
         else if (n[i] != '%')
