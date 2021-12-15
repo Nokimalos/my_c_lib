@@ -24,5 +24,6 @@ void *my_memcpy(void * restrict dest, const void * restrict src, size_t len);
 void *my_memccpy(void * restrict dest, const void * restrict src, int c, size_t n);
 int my_memcmp(const void *to_compare, const void *compared, size_t size);
 void *my_memmove(void *dest, const void *src, size_t size);
+void my_bzero(void *s, size_t n);
 
 #endif /* !LIBSTRING_H_ */
