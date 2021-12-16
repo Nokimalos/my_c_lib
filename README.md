@@ -14,9 +14,9 @@ Coverage :
          - Branches : 93.3%
 
 ## How to test to compile the Lib and see the tests :
-         # Prerequires :
-                  - Criterion
-                  - CMake
+         Prerequires :
+         - Criterion
+         - CMake
 
          - make re -> Compile the lib.
          - firefox covr.html -> See the tests on HTML page.
