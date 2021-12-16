@@ -14,8 +14,11 @@ Coverage :
          - Branches : 93.3%
 
 ## How to test to compile the Lib and see the tests :
-         
-         - make re -> Compile the lib. (make sure that you have Criterion installed on your device !)
+         # Prerequires :
+                  - Criterion
+                  - CMake
+
+         - make re -> Compile the lib.
          - firefox covr.html -> See the tests on HTML page.
          - make clean -> clean .html, .gcda, .gcno and test executable.
          - make cleanobjs -> clean all the .o files.
