@@ -1,8 +1,8 @@
 # my_lib
 
-Hi ! It's Noki and this repo is for all the functions of the LIB C that I code.
+Hi ! It's Noki and this repo is for all the functions of the LIB C and some util functions that I code.
 
-There are some Unit Tests made with Criterion for some functions.
+There are some Unit Tests made with Criterion for the functions.
 
 ## Unit Test with Criterion
 
@@ -13,9 +13,12 @@ Coverage :
          - Lines : 100%
          - Branches : 93.3%
 
-How to test to compile the Lib and see the tests :
+## How to test to compile the Lib and see the tests :
          
-         - 1. make re (If you don't have make : sudo dnf install make automake gcc gcc-c++ kernel-devel)
-         - 2. firefox covr.html
+         - make re -> Compile the lib. (make sure that you have Criterion installed on your device !)
+         - firefox covr.html -> See the tests on HTML page.
+         - make clean -> clean .html, .gcda, .gcno and test executable.
+         - make cleanobjs -> clean all the .o files.
+         - make fclean -> make clean and make cleanobjs at the same time.
 
 Enjoy :)
