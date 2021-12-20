@@ -11,7 +11,7 @@ void *my_memmove(void *dest, const void *src, size_t size)
     // Moove the memory normaly
     char *d_tmp = dest;
     const char *s_tmp = src;
-   
+
     // If the two memory areas overlap
     char *d_tmp_overlapped = d_tmp + (size - 1);
     const char *s_tmp_overlapped = s_tmp + (size - 1);
