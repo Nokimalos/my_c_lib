@@ -4,9 +4,9 @@ Hi ! It's Noki and this repo is for all the functions of the LIB C and some util
 
 There are some Unit Tests made with Criterion for the functions.
 
-## Functions
+# Functions
 
-# Ctype functions : ```#include "libctype.h" ```
+## Ctype functions : ```#include "libctype.h" ```
 ```c
 int my_str_isalpha(char const *str);
 int my_str_islower(char const *str);
@@ -23,13 +23,13 @@ int my_isgraph(const char *str);
 int my_iscntrl(const char *str);
 ```
 
-# Math functions : ```#include "libmath.h" ```
+## Math functions : ```#include "libmath.h" ```
 ```c
 int my_squareroot(int nb);
 int my_factrec(int nb);
 ```
 
-# Stdio functions : ```#include "libstdio.h" ```
+## Stdio functions : ```#include "libstdio.h" ```
 ```c
 void my_putchar(char c);
 int my_putstr(char *str);
@@ -43,12 +43,12 @@ void my_pflag(int n);
 void my_printf(char *n, ...);
 ```
 
-# Stdlib functions : ```#include "libstdlib.h" ```
+## Stdlib functions : ```#include "libstdlib.h" ```
 ```c
 void *my_calloc(size_t nmemb, size_t size);
 ```
 
-# String functions : ```include "libstring.h" ```
+## String functions : ```include "libstring.h" ```
 ```c
 int my_strcmp(char const *s1, char const *s2);
 char *my_strlowcase(char *str);
