@@ -68,7 +68,7 @@ void *my_memmove(void *dest, const void *src, size_t size);
 void my_bzero(void *s, size_t n);
 ```
 
-## Unit Test with Criterion
+# Unit Test with Criterion
 
 ![coverage](https://user-images.githubusercontent.com/72025226/138173352-f47d264a-2445-4b0a-abb4-95a765279cad.jpeg)
 
@@ -77,7 +77,7 @@ Coverage :
          - Lines : 100%
          - Branches : 93.3%
 
-## How to test to compile the Lib and see the tests :
+# How to test to compile the Lib and see the tests :
          Prerequires :
          - Criterion
          - CMake
