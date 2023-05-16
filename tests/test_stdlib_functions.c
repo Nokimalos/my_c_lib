@@ -1,5 +1,4 @@
 /*
-** my_lib
 ** File description:
 ** test_stdlib_functions
 */

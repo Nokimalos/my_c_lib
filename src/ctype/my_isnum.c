@@ -1,5 +1,4 @@
 /*
-** my_str_isnum.c
 ** File description:
 ** my_str_isnum
 */

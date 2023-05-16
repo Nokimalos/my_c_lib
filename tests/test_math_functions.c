@@ -1,5 +1,4 @@
 /*
-** my_lib
 ** File description:
 ** test_math_functions
 */

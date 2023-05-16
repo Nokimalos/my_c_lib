@@ -1,5 +1,4 @@
 /*
-** my_str_isupper.c
 ** File description:
 ** my_str_isupper
 */

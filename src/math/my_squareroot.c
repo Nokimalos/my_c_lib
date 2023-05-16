@@ -1,5 +1,4 @@
 /*
-** UTEST_LIB
 ** File description:
 ** my_squareroot
 */

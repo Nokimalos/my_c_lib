@@ -1,5 +1,4 @@
 /*
-** EPITECH PROJECT, 2021
 ** File description:
 ** my_memcmp
 */

@@ -1,6 +1,4 @@
 /*
-** EPITECH PROJECT, 2020
-** my_oflag.c
 ** File description:
 ** my_oflag.c
 */

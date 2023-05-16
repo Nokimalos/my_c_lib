@@ -1,5 +1,4 @@
 /*
-** my_strcat.c
 ** File description:
 ** my_strcat
 */

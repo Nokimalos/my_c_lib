@@ -1,6 +1,4 @@
 /*
-** EPITECH PROJECT, 2021
-** Unit_Test_Lib
 ** File description:
 ** test_my_printf
 */

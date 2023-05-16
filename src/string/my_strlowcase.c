@@ -1,5 +1,4 @@
 /*
-** my_strlowcase.c
 ** File description:
 ** my_strlowcase
 */

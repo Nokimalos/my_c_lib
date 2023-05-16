@@ -1,5 +1,4 @@
 /*
-** my_put_nbr.c
 ** File description:
 ** my_put_nbr
 */

@@ -1,5 +1,4 @@
 /*
-** my_isspace.c
 ** File description:
 ** my_isspace
 */

@@ -1,5 +1,4 @@
 /*
-** my_putnbr_base.c
 ** File description:
 ** my_putnbr_base
 */

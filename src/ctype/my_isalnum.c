@@ -1,5 +1,4 @@
 /*
-** my_isalnum.c
 ** File description:
 ** my_isalnum
 */

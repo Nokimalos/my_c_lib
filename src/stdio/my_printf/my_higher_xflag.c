@@ -1,6 +1,4 @@
 /*
-** EPITECH PROJECT, 2020
-** my_xflag.c
 ** File description:
 ** my_xflag
 */

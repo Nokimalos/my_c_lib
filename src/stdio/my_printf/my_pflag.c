@@ -1,6 +1,4 @@
 /*
-** EPITECH PROJECT, 2020
-** my_pflag.c
 ** File description:
 ** my_pflag
 */

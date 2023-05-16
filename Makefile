@@ -1,6 +1,4 @@
 ##
-## EPITECH PROJECT, 2021
-## 110
 ## File description:
 ## Makefile
 ##

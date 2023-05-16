@@ -1,5 +1,4 @@
 /*
-** my_strupcase.c
 ** File description:
 ** my_strupcase
 */

@@ -1,5 +1,4 @@
 /*
-** my_lib
 ** File description:
 ** my_calloc
 */

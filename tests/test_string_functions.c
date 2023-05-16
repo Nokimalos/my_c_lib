@@ -1,5 +1,4 @@
 /*
-** Unit_Test_Lib
 ** File description:
 ** test_string_functions
 */

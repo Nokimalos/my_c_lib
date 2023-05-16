@@ -1,5 +1,4 @@
 /*
-** my_str_isalpha.c
 ** File description:
 ** my_str_isalpha
 */
