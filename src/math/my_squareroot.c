@@ -27,3 +27,5 @@ double my_Dsquareroot(double nb)
     for (; i * i < nb; ++i);
     return (i * i == nb) ? i : -1;
 }
+
+#define square(x) _Generic((x), int: my_Isquareroot, float: my_Fsquareroot, double: my_Dsquareroot, default: my_Isquareroot)(x)
