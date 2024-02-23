@@ -131,6 +131,7 @@ Test(my_memchr, reconize_data)
     const unsigned int size = 10;
 
     cr_assert(my_memchr(data, 50, size) == memchr(data, 50, size));
+    cr_assert(my_memchr(data, 999, size) == NULL);
 }
 
 Test(my_memcpy, copy_data)
@@ -161,6 +162,20 @@ Test(my_memmove, move_data)
     cr_assert(memmove(dest, src, size) == my_memmove(dest, src, size));
 }
 
+Test(my_memmove, zero_size)
+{
+    int data[] = {1, 2, 3, 4, 5};
+    size_t size = 0;
+    int *src = data;
+    int *dest = data; 
+
+    my_memmove(dest, src, size);
+
+    for (size_t i = 0; i < 5; ++i) {
+        cr_assert_eq(data[i], i + 1);
+    }
+}
+
 Test(my_strchr, move_str)
 {
     const char *src = "The C Language";
@@ -168,4 +183,24 @@ Test(my_strchr, move_str)
     char *dest = (char *)malloc(sizeof(char) * (len + 1));
 
     cr_assert(my_strchr(dest, 'a') == strchr(dest, 'a'));
+}
+
+Test(my_strchr, character_found)
+{
+    const char *src = "The C Language";
+    char *result = my_strchr(src, 'C');
+    cr_assert_not_null(result);
+    cr_assert_eq(*result, 'C');
+}
+
+Test(my_bzero, non_zero_size)
+{
+    char buffer[10] = "abcdefghi";
+    size_t size = 10;
+
+    my_bzero(buffer, size);
+
+    for (size_t i = 0; i < size; ++i) {
+        cr_assert_eq(buffer[i], 0);
+    }
 }
