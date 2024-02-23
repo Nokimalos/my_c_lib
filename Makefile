@@ -42,7 +42,7 @@ cleanobjs:
 	$(RM) *.o $(RM) src/*.o $(RM) src/ctype/*.o $(RM) src/math/*.o $(RM) src/string/*.o $(RM) src/stdlib/*.o $(RM) src/stdio/my_printf/*.o $(RM) tests/*.o
 
 clean:
-	$(RM) *~ $(RM) *.html $(RM) *.gcda $(RM) *.gcno $(RM) $(TESTNAME)
+	$(RM) *~ $(RM) *.html $(RM) *.gcda $(RM) *.gcno $(RM) $(TESTNAME) $(RM) covr.css
 
 fclean: clean cleanobjs
 
