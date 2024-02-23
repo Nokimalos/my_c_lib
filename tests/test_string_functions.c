@@ -155,7 +155,7 @@ Test(my_memmove, move_data)
 {
     int data[] = {20, 30, 40, 50, 60, 70, 80, 90, 100, 0};
     void *src = (void *) data;
-    void *dest = (void *) (data + 1);
+    void *dest = (void *) data;
     size_t size = 10 * sizeof(int);
 
     cr_assert(memmove(dest, src, size) == my_memmove(dest, src, size));
