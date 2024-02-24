@@ -4,8 +4,6 @@
 */
 
 #include <unistd.h>
-#include <stdbool.h>
-#include <limits.h>
 
 void my_putchar(char c)
 {

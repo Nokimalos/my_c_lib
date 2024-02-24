@@ -6,7 +6,6 @@
 #include "libstring.h"
 #include <malloc.h>
 #include <stdlib.h>
-#include <stdint.h>
 #include <string.h>
 
 void *my_realloc(void *ptr, size_t size)

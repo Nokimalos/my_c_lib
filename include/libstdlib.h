@@ -10,5 +10,6 @@
 
 void *my_calloc(size_t nmemb, size_t size);
 void *my_realloc(void *ptr, size_t size);
+void *my_reallocarray(void *ptr, size_t nmemb, size_t size);
 
 #endif /* !LIBSTDLIB_H_ */
