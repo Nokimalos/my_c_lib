@@ -3,6 +3,7 @@
 ** my_realloc
 */
 
+#include "libstring.h"
 #include <malloc.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -23,7 +24,7 @@ void *my_realloc(void *ptr, size_t size)
     size_t old_size = malloc_usable_size(ptr);
     size_t copy_size = (old_size < size) ? old_size : size;
 
-    memcpy(new_ptr, ptr, copy_size);
+    my_memcpy(new_ptr, ptr, copy_size);
 
     free(ptr);
     return new_ptr;
